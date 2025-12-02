@@ -1,12 +1,12 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Evalify-Docs',
-  tagline: 'A Comprehensive Student Evaluation Platform',
+  title: 'Evalify',
+  tagline: 'A Comprehensive Evaluation Platform',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,10 +15,10 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://evalify.amritanet.edu',
+  url: 'https://evalify.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/evalify-docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -70,12 +70,12 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/logo.svg',
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Evalify-Docs',
+      title: 'Evalify',
       logo: {
         alt: 'Evlaify Logo',
         src: 'img/logo.svg',
@@ -83,16 +83,22 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docsSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
-        // {to: '/blog', label: 'Blog', position: 'left'},
-        // {
-        //   href: 'https://github.com/facebook/docusaurus',
-        //   label: 'GitHub',
-        //   position: 'right',
-        // },
+        {
+          type: 'doc',
+          docId: 'contributors',
+          position: 'left',
+          label: 'Contributors',
+        },
+        // { to: '/blog', label: 'Blog', position: 'left' },
+        {
+          href: 'https://github.com/evalify/evalify',
+          label: 'GitHub',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -142,7 +148,7 @@ const config: Config = {
     },
     prism: {
       theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      darkTheme: prismThemes.github,
     },
   } satisfies Preset.ThemeConfig,
 };
