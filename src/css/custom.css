@@ -28,8 +28,16 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
- 
+
 /* Invert logo in dark mode */
 [data-theme='dark'] .navbar__logo {
   filter: invert(1);
+}
+
+/* Rounded corners for images in Markdown content */
+.markdown img {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }

@@ -67,7 +67,7 @@ Meet the team behind Evalify. We are incredibly grateful for the dedication and 
   </div>
 </div>
 
-## Contributors
+## Top Contributors
 
 <div className="row">
   <div className="col col--4 margin-bottom--lg">
