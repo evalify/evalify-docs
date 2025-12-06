@@ -25,7 +25,6 @@ const sidebars: SidebarsConfig = {
         'intro/what-is-evalify',
         'intro/core-features',
         'intro/system-architecture',
-        'intro/user-roles',
         'intro/terminology',
       ],
     },
@@ -36,7 +35,6 @@ const sidebars: SidebarsConfig = {
       label: 'Setup & Access',
       items: [
         'setup/login',
-        'setup/navigation-overview',
       ],
     },
 
